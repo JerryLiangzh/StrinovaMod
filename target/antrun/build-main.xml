@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="main"  >
 <target name="main">
-  <copy file="target/strinova-mod.jar" tofile="E:/Steam/steamapps/common/SlayTheSpire/mods/strinova-mod.jar"/>
+  <copy file="target/StrinovaMod.jar" tofile="E:/Steam/steamapps/common/SlayTheSpire/mods/StrinovaMod.jar"/>
 </target>
 </project>
