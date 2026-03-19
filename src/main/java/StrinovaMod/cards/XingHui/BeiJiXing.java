@@ -4,22 +4,18 @@ import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.DamageInfo.DamageType;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import StrinovaMod.StrinovaMod;
-import StrinovaMod.helpers.ModHelpers;
 import basemod.abstracts.CustomCard;
 
 public class BeiJiXing extends CustomCard {
-    public static final String ID = ModHelpers.makePath("BeiJiXing");
-    private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID);
-    private static final String NAME = CARD_STRINGS.NAME;
+    public static final String ID = ("StrinovaMod:BeiJiXing");
+    private static final String NAME = "星绘的北极星";
     public static final String IMG = StrinovaMod.assetPath("cards/XingHui/BeiJiXing.png");
     private static final int COST = 1;
-    private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION;
+    private static final String DESCRIPTION = "造成 !D! 点伤害。";
     private static final CardType TYPE = CardType.ATTACK;
     private static final CardColor COLOR = CardColor.GREEN;
     private static final CardRarity RARITY = CardRarity.BASIC;
@@ -38,7 +34,7 @@ public class BeiJiXing extends CustomCard {
         if (!this.upgraded) {
             this.upgradeName(); // 卡牌名字变为绿色并添加“+”，且标为升级过的卡牌，之后不能再升级。
             this.upgradeDamage(3); // 升级后伤害增加3点
-            this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
+            this.rawDescription = "造成 !D! 点伤害。";
             this.initializeDescription();
         }
     }
