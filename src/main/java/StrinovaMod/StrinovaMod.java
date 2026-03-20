@@ -1,5 +1,8 @@
 package StrinovaMod;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -13,6 +16,8 @@ import com.megacrit.cardcrawl.localization.CharacterStrings;
 
 import com.badlogic.gdx.graphics.Color;
 import StrinovaMod.cards.XingHui.BeiJiXing;
+import StrinovaMod.cards.XingHui.BeiJiXingFanXing;
+import StrinovaMod.cards.XingHui.BeiJiXingJiXing;
 import StrinovaMod.characters.Navigator;
 import basemod.BaseMod;
 import basemod.interfaces.EditCardsSubscriber;
@@ -21,6 +26,7 @@ import basemod.interfaces.EditStringsSubscriber;
 
 @SpireInitializer
 public class StrinovaMod implements EditCardsSubscriber, EditStringsSubscriber, EditCharactersSubscriber{
+    public static final Logger logger = LogManager.getLogger(StrinovaMod.class);
     public static final String MOD_ID = "StrinovaMod";
 
     private static final String NavigatorButton = "StrinovaMod/images/characters/NavigatorButton.png";
@@ -66,6 +72,8 @@ public class StrinovaMod implements EditCardsSubscriber, EditStringsSubscriber, 
     @Override
     public void receiveEditCards() {
         BaseMod.addCard(new BeiJiXing());
+        BaseMod.addCard(new BeiJiXingFanXing());
+        BaseMod.addCard(new BeiJiXingJiXing());
     }
 
     public static String makeID(String id) {
