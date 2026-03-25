@@ -1,5 +1,7 @@
-StrinovaMod\StrinovaMod$Enums.class
-StrinovaMod\StrinovaMod.class
-StrinovaMod\cards\XingHui\BeiJiXing.class
-StrinovaMod\StrinovaMod$CardEnum.class
-StrinovaMod\characters\Navigator.class
+StrinovaSpire\cards\XingHui\BeiJiXing.class
+StrinovaSpire\cards\XingHui\BeiJiXingFanXing.class
+StrinovaSpire\StrinovaSpire$Enums.class
+StrinovaSpire\characters\Navigator.class
+StrinovaSpire\StrinovaSpire.class
+StrinovaSpire\StrinovaSpire$CardEnum.class
+StrinovaSpire\cards\XingHui\BeiJiXingJiXing.class

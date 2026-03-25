@@ -1,9 +1,9 @@
 {
-  "modid": "StrinovaMod",
-  "name": "StrinovaMod",
+  "modid": "StrinovaSpire",
+  "name": "StrinovaSpire",
   "author_list": ["Jerry Liangzh"],
-  "description": "一个基于卡拉彼丘的Mod",
-  "version": "0.2.1",
+  "description": "一个卡拉彼丘主题的杀戮尖塔Mod",
+  "version": "0.2.2",
   "sts_version": "12-18-2022",
   "mts_version": "3.30.3",
   "dependencies": ["basemod"]

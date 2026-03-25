@@ -1,2 +1,2 @@
 # StrinovaSpire
-Strinova-themed Slay the Spire Mod
+A Strinova-themed Mod of Slay the Spire
